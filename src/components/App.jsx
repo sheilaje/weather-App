@@ -1,9 +1,10 @@
 import React from 'react';
+import InputForm from './InputForm';
 
 function App(){
   return(
     <div>
-      <h1>Hello!!!</h1>
+      <InputForm/>
     </div>
   );
 }
