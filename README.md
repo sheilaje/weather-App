@@ -14,7 +14,7 @@ This is a weather forecast App that pulls weatehr data for the city entered by t
 
 ## Setup/Installation Requirementss
 
-* Clone this project with `git clone https://github.com/sheilaje/portfolioInReact`
+* Clone this project with `git clone https://github.com/sheilaje/weatherAppPlanningRepo`
 * Run `npm install` to install dependencies
 * Run `npm run start` to build and serve the project
 * View the project in any browser at `http://localhost:8080/`
