@@ -16,7 +16,7 @@ function InputForm(){
 
         <Form.Group controlId="formBasicCountry">
           <Form.Label className="labelText">Country</Form.Label>
-          <Form.Control type="text" placeholder="Enter country"  className="city"/>
+          <Form.Control className="textBoxStyle" type="text" placeholder="Enter country"  className="city"/>
           <Form.Text className="text-muted">
           </Form.Text>
         </Form.Group>
