@@ -6,6 +6,7 @@ function Error404(props) {
   return (
     <div>
       <p>The page {props.location.pathname} does not exist.</p>
+      <p>Would you like to return <Link to="/">home</Link> instead?</p>
     </div>
   );
 }
