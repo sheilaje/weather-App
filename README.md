@@ -12,7 +12,17 @@ This is a weather forecast App that pulls weatehr data for the city entered by t
 
 <img src="src/components/assets/images/Component-structure.jpeg" width="350" title="Component Structure">
 
-## Setup/Installation Requirementss
+## Minimum Viable Product(MVP)
+
+* The user can enter a city and country
+* The user can get the weather in that location
+* The user can also see the forecast for the next 5-days.
+
+## Further Exploration
+
+* To display a map with the current weather conditions.
+
+## Setup/Installation Requirements
 
 * Clone this project with `git clone https://github.com/sheilaje/weatherAppPlanningRepo`
 * Run `npm install` to install dependencies
@@ -29,7 +39,9 @@ If you discover a bug or would like to make a suggestion, email me at sheila.je@
 
 ## Technologies Used
 
-React, Webpack, Material -UI.
+* React 
+* Webpack
+* Open weather map API
 
 ### License
 
