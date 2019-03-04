@@ -1,39 +1,49 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './assets/styles/styles.css';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
 
-function InputForm(){
+function InputForm(props){
+
+  let _city=null;
+  let _country=null;
+
+  function handleNewFormSubmission(event){
+    event.preventDefault();
+    props.onNewFormSubmission({city: _city.value, country: _country.value});
+    _city.value='';
+    _country.value='';
+  }
   return(
-     
+
     <div className='weatherContainer'>
 
       <p className="formHeading" for="">Find out the Weather !!</p> <br></br>
-      <Form className="gridStyles">
 
-        {/* <p className="formHeading" for="">Find out the Weather !!</p> <br></br> */}
 
-        <Form.Group controlId="formBasicCity" classname="cityTextStyle">        
-          <Form.Label className="labelText">City</Form.Label>
-          <Form.Control type="text" placeholder="Enter city" className="city"/>
-          <Form.Text className="text-muted">
-          </Form.Text>
-        </Form.Group>
+        <form onSubmit={handleNewFormSubmission}>
+            <input type='text'
+              id='city'
+              placeholder='type the city'
+              ref={(input) => {_city = input;}}/>
 
-        <Form.Group controlId="formBasicCountry" classname="cityTextStyle">
-          <Form.Label className="labelText">Country</Form.Label>
-          <Form.Control type="text" placeholder="Enter country"  className="city"/>
-          <Form.Text className="text-muted">
-          </Form.Text>
-        </Form.Group>
+              <input type='text'
+                id='country'
+                placeholder='type the country'
+                ref={(input) => {_country = input;}}/>
 
-       
-        <Button className ="btn" variant="warning">Get the Weather</Button>
-       
-        
-      </Form>
+              <button type='submit'> Get the weather </button>
+
+        </form>
+
+
     </div>
   );
 }
+
+InputForm.propTypes = {
+  onNewFormSubmission: PropTypes.func
+};
 
 export default InputForm;
