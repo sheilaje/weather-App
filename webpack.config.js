@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 const {
   resolve
 } =    require('path')
@@ -78,6 +79,7 @@ module.exports = {
   },
 
   plugins: [
+    new Dotenv(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
