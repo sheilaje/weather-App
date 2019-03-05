@@ -25,6 +25,7 @@ This is a weather forecast App that pulls weatehr data for the city entered by t
 ## Setup/Installation Requirements
 
 * Clone this project with `git clone https://github.com/sheilaje/weatherAppPlanningRepo`
+* create a .env file in the root folder. store the api key in a variable like this - REACT_APP_anyName = 'YOUR-API-KEY' (The Api kay stored in the .env file should be stored in a variable name of format -   REACT_APP_variablename   and for accessing this API key in the code you shoud use like this - process.env.REACT_APP_variablename )
 * Run `npm install` to install dependencies
 * Run `npm run start` to build and serve the project
 * View the project in any browser at `http://localhost:8080/`
@@ -39,7 +40,7 @@ If you discover a bug or would like to make a suggestion, email me at sheila.je@
 
 ## Technologies Used
 
-* React 
+* React
 * Webpack
 * Open weather map API
 
