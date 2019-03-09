@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a weather forecast App that pulls weatehr data for the city entered by the user.
+This is a weather forecast App that pulls weather data for the city entered by the user.
 
 ## Comopnent Structure
 
@@ -14,9 +14,9 @@ This is a weather forecast App that pulls weatehr data for the city entered by t
 
 ## Minimum Viable Product(MVP)
 
-* The user can enter a city and country
+* The user can enter a city
 * The user can get the weather in that location
-* The user can also see the forecast for the next 5-days.
+* The user can also see the forecast for the next 7-days.
 
 ## Further Exploration
 
@@ -24,7 +24,9 @@ This is a weather forecast App that pulls weatehr data for the city entered by t
 
 ## Setup/Installation Requirements
 
+* Install Node.js
 * Clone this project with `git clone https://github.com/sheilaje/weatherAppPlanningRepo`
+* Navigate ti teh root directory of the project with cd weatherApp
 * Run `npm install` to install dependencies
 * Run `npm run start` to build and serve the project
 * View the project in any browser at `http://localhost:8080/`
@@ -40,8 +42,9 @@ If you discover a bug or would like to make a suggestion, email me at sheila.je@
 ## Technologies Used
 
 * React 
+* Redux
 * Webpack
-* Open weather map API
+* APIXU API
 
 ### License
 
