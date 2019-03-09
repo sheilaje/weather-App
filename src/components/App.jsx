@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createForecastAction } from './actions';
 // import ForecastListReducer from '../reducers';
 import { connect } from 'react-redux';
+import WeatherList from './WeatherList';
 
 class App extends Component {
   constructor(props){
@@ -28,7 +29,7 @@ class App extends Component {
     } else {
       return (
         <div>
-          Got it
+          <WeatherList  forecastList = {this.props.forecastWeek}/>
         </div>
       )
     }
