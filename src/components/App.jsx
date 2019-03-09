@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { createForecastAction } from './actions';
+import './assets/styles/styles.css';
 // import ForecastListReducer from '../reducers';
 import { connect } from 'react-redux';
 import WeatherList from './WeatherList';
@@ -22,7 +23,7 @@ class App extends Component {
   render() {
     if(!this.props.forecastWeek){
       return (
-        <div>
+        <div className='weatherContainer'>
           <button onClick={this.getForecast}>get weather</button>
         </div>
       )
