@@ -1,7 +1,7 @@
 {
-    "name": "Portfolio-React",
+    "name": "Weather-App",
     "version": "1.0.0",
-    "description": "An Exercise to make a portfolio using React",
+    "description": "Weather App project",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,9 +14,10 @@
     "dependencies": {
         "@material-ui/core": "^3.9.2",
         "@material-ui/icons": "^3.0.2",
+        "antd": "^3.15.0",
         "bootstrap": "^4.3.1",
         "materialize-css": "^1.0.0-rc.2",
-        "moment": "^2.24.0",
+        "moment": "^2.18.1",
         "prop-types": "^15.5.10",
         "react": "^16.8.1",
         "react-bootstrap": "^1.0.0-beta.5",
