@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function ForecastDetail(props){
   // const today = props.forecast.forecastMoment.format('ddd');
@@ -38,9 +38,9 @@ function ForecastDetail(props){
     </div>
   );
 }
-
-ForecastDetail.propTypes={
-  forecast: PropTypes.array
-};
+//
+// ForecastDetail.propTypes={
+//   forecast: PropTypes.array
+// };
 
 export default ForecastDetail;
