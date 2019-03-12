@@ -17,14 +17,14 @@ class App extends Component {
   render() {
     if(!this.props.forecastWeek){
       return (
-        <div className='weatherBlock'>
+        <div className='weatherContainer'>
           <Navbar />
           <InputForm />
         </div>
       );
     } else {
       return (
-        <div className = 'styled'>
+        <div className = 'weatherContainer'>
           <Navbar />
           <InputForm />
           <WeatherList  forecastList = {this.props.forecastWeek}/>
