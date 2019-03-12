@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import WeatherList from './WeatherList';
 import InputForm from './InputForm';
+import Navbar from './Navbar';
 
 class App extends Component {
   constructor(props){
@@ -16,13 +17,15 @@ class App extends Component {
   render() {
     if(!this.props.forecastWeek){
       return (
-        <div className='styled'>
+        <div className='weatherBlock'>
+          <Navbar />
           <InputForm />
         </div>
       );
     } else {
       return (
         <div className = 'styled'>
+          <Navbar />
           <InputForm />
           <WeatherList  forecastList = {this.props.forecastWeek}/>
         </div>
