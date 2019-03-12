@@ -15,12 +15,14 @@ function InputForm({ dispatch }){
   }
 
   return (
-    <div>
+    <div className='weatherBlock'>
+      <div id='input'></div>
       <input type='text'
-        id='city'
+        className='input'
         ref={(input)=>{_city=input;}}
         placeholder='city'/>
-      <button type='button' onClick={getForecast} className='btn'> Get Forecast </button>
+
+      <button type='button' onClick={getForecast} className='btn' > Get Forecast </button>
     </div>
   );
 }
