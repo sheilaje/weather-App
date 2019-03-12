@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ForecastDetail(props){
-  const today = props.forecast.forecastMoment.format('ddd');
+  // const today = props.forecast.forecastMoment.format('ddd');
   const { mintemp_c, maxtemp_c, avgtemp_c, mintemp_f, maxtemp_f, avgtemp_f, maxwind_kph, maxwind_mph, totalprecip_mm, totalprecip_in, avgvis_km, avgvis_miles, avghumidity, uv} = props.forecast.day;
   const { sunrise, sunset, moonrise, moonset } = props.forecast.astro;
   const { text, icon } = props.forecast.day.condition;
@@ -36,7 +36,11 @@ function ForecastDetail(props){
         </dd>
       </dl>
     </div>
-  )
+  );
 }
+
+ForecastDetail.propTypes={
+  forecast: PropTypes.array
+};
 
 export default ForecastDetail;

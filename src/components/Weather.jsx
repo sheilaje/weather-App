@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
+// import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 class Weather extends React.Component{
@@ -20,11 +20,11 @@ class Weather extends React.Component{
 
   handleClickOpen (){
     this.setState({ open: true });
-  };
+  }
 
   handleClose () {
     this.setState({ open: false });
-  };
+  }
 
 
   render(){//Button for handleOpen required to allow Button for handleClose to work
@@ -40,23 +40,23 @@ class Weather extends React.Component{
       <img src={icon} alt='weather icon'/>
 
       <Dialog
-          open={this.state.open}
-          onClose={this.handleClose}
-          aria-labelledby="alert-dialog-title"
-          aria-describedby="alert-dialog-description"
-        >
-          <DialogTitle id="alert-dialog-title">{today}</DialogTitle>
-          <DialogContent>
-            <ForecastDetail forecast={this.props.forecast}/>
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={this.handleClose} color="primary" autoFocus>
-              DONE
-            </Button>
-          </DialogActions>
-        </Dialog>
+        open={this.state.open}
+        onClose={this.handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{today}</DialogTitle>
+        <DialogContent>
+          <ForecastDetail forecast={this.props.forecast}/>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={this.handleClose} color="primary" autoFocus>
+            DONE
+          </Button>
+        </DialogActions>
+      </Dialog>
 
-    </div>)
+    </div>);
   }
 }
 
@@ -74,6 +74,6 @@ Weather.propTypes = {
     }),
     astro: PropTypes.objectOf(PropTypes.string)
   })
-}
+};
 
 export default Weather;
