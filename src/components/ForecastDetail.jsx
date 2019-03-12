@@ -13,9 +13,9 @@ function ForecastDetail(props){
       <dl>
         <dt>Temperature</dt>
         <dd>
-          Min:  {mintemp_c}^C  {mintemp_f}^F<br/>
-          max:  {maxtemp_c}^C  {maxtemp_f}^F<br/>
-          avg:  {avgtemp_c}^C  {avgtemp_f}^F<br/>
+          Min:  {mintemp_c}&#8451;  {mintemp_f}&#8457;<br/>
+          max:  {maxtemp_c}&#8451; {maxtemp_f}&#8457;<br/>
+          avg:  {avgtemp_c}&#8451; {avgtemp_f}&#8457;<br/>
         </dd>
         <dt>Max Windspeed</dt>
         <dd>{maxwind_kph} kph  |  {maxwind_mph} mph</dd>
@@ -38,9 +38,5 @@ function ForecastDetail(props){
     </div>
   );
 }
-//
-// ForecastDetail.propTypes={
-//   forecast: PropTypes.array
-// };
 
 export default ForecastDetail;
