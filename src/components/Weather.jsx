@@ -35,8 +35,7 @@ class Weather extends React.Component{
       <hr/>
       <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
         <h3>{today}</h3>
-      </Button>
-      {text}
+      </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;{text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;
       <img src={icon} alt='weather icon'/>
 
       <Dialog
