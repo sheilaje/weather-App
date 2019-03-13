@@ -50,13 +50,62 @@
 
               text-align: center;
             }
+            
+            
+          .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+            .weatherRow {
+              width: 100%;
+              border-bottom: 1px solid #a7a7a7;
+              padding-bottom: 10px;
+              margin-bottom: 20px;
+            }
+            .weatherCol {
+              float: left;
+            }
+            
+            .weatherDay {
+                width: 20%;
+            }
+            .weatherTextSpan {
+              width: 40%;
+              padding-top: 40px;
+            }
+            .weatherImg {
+                width: 20%;
+                padding-top: 15px;
+            }
+            .weatherPlus {
+                width: 20%;
+                  content: '\002B';
+                  padding-top: 20px;
+            }
+            .weatherPlusImg {
+              height: 32px;
+              width: 32px;
+            }
+            
+            .roundedDay {
+              padding: 20px; 
+              width: 65px;
+              height: 75px;
+              text-transform: uppercase;
+              font-style: normal;
+              color: #3f51b5;
+              font-weight: bold;
+              font-size: 16px;
+            }
 
             .input{
               height: 4em;
               width: 25%;
               margin-right: 15px;
               font-size: 14px;
-              border-radius: 10%;
+              border-radius: 10px;
+              padding: 10px;
             }
 
             .btn {
