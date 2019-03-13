@@ -83,7 +83,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Portfolio',
+      title: 'Weather App',
+      favicon: './src/components/assets/images/weatherIcon.jpeg',
       filename: resolve(__dirname, 'build', 'index.html'),
     }),
   ]
