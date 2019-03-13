@@ -50,8 +50,8 @@
 
               text-align: center;
             }
-            
-            
+
+
           .clearfix::after {
             content: "";
             clear: both;
@@ -66,7 +66,7 @@
             .weatherCol {
               float: left;
             }
-            
+
             .weatherDay {
                 width: 20%;
             }
@@ -87,9 +87,9 @@
               height: 32px;
               width: 32px;
             }
-            
+
             .roundedDay {
-              padding: 20px; 
+              padding: 20px;
               width: 65px;
               height: 75px;
               text-transform: uppercase;
@@ -154,8 +154,6 @@
               box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                    inset 2px 2px 3px rgba(0, 0, 0, .6);
               }
-
-
 
 h2 {
   vertical-align: center;
