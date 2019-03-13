@@ -8,6 +8,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 // import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import plus from './assets/images/plus-big-512.png';
 
 class Weather extends React.Component{
   constructor(props){
@@ -31,12 +32,17 @@ class Weather extends React.Component{
     const today = this.props.forecast.forecastMoment.format('ddd');
     const { text, icon } = this.props.forecast.day.condition;
 
-    return (<div>
-      <hr/>
-      <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
-        <h3>{today}</h3>
-      </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;{text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;
-      <img src={icon} alt='weather icon'/>
+    return (<div className="clearfix weatherRow">
+      <div className="weatherCol weatherDay">
+        <p className="roundedDay">{today}</p>
+      </div>
+      <div className="weatherCol weatherTextSpan">{text} </div>
+      <div className="weatherCol weatherImg"><img src={icon} alt='weather icon'/></div>
+      <div className="weatherCol weatherPlus">
+        <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+          <img src={plus} className="weatherPlusImg" alt='weather icon'/>
+        </Button>
+      </div>
 
       <Dialog
         open={this.state.open}
