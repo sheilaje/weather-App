@@ -13,7 +13,7 @@ function Navbar(){
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
-      <p><bold>THE WEATHER APP</bold></p>
+      <p><bold>THE  WEATHER  APP</bold></p>
     </ul>
   </section>
   )
